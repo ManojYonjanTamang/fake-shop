@@ -1,7 +1,7 @@
 import {
   SET_PRODUCTS,
   SELECTED_PRODUCT,
-  REMOVE_PRODUCT,
+  REMOVE_PREV_PRODUCT,
 } from "./productActionsTypes";
 
 export const setProducts = (products) => {
@@ -11,16 +11,15 @@ export const setProducts = (products) => {
   };
 };
 
-// export const selectedProduct = (product) => {
-//   return {
-//     type: SELECTED_PRODUCT,
-//     payload: product,
-//   };
-// };
+export const selectedProduct = (product) => {
+  return {
+    type: SELECTED_PRODUCT,
+    payload: product,
+  };
+};
 
-// export const removeProduct = (product) => {
-//   return {
-//     type: REMOVE_PRODUCT,
-//     payload: product,
-//   };
-// };
+export const removePrevProduct = () => {
+  return {
+    type: REMOVE_PREV_PRODUCT,
+  };
+};

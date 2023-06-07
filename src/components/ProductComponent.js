@@ -22,7 +22,7 @@ const ProductComponent = () => {
     );
   });
 
-  return <div>{showProducts}</div>;
+  return <>{showProducts}</>;
 };
 
 export default ProductComponent;
